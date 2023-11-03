@@ -1,0 +1,31 @@
+# Ignore les fichiers et répertoires générés par Terraform
+.terraform/
+
+# Ignore les fichiers de sauvegarde Terraform
+*.tfstate
+*.tfstate.backup
+*.tfstate.lock.info
+
+# Ignore les fichiers de configuration de Terraform s'ils contiennent des secrets
+*.auto.tfvars
+*.auto.tfvars.json
+
+# Ignore les fichiers de configuration de Terraform pouvant contenir des secrets
+*.secret.tfvars
+*.secret.tfvars.json
+
+terraform.tfvars
+
+# Ignore les fichiers de configuration Terraform verrouillés (locks)
+*.terraform.lock.hcl
+
+# Ignore les fichiers .plan générés par `terraform plan`
+*.plan
+
+# Ignore les fichiers de variables d'environnement
+.env
+
+# Ignore les fichiers de secrets ou de clés d'API
+secrets.json
+secrets.yaml
+secrets.tfvars
