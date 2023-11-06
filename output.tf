@@ -10,6 +10,9 @@
 # output "default_vpc" {
 #   value = data.aws_vpc.existing_vpc
 # }
-output "name" {
-  value = ""
+# output "name" {
+#   value = ""
+# }
+output "ec2_public_ip" {
+  value = aws_instance.myapp-server.public_ip
 }

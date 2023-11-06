@@ -5,6 +5,6 @@ Steps:
 1. Create Custom VPC
 2. Create Custom Subnet
 3. Create Route Table & Internet Gateway
-4. Provision EC2 Instance
-5. Deploy Docker container
-6. Create Security Group (Firewall)
+4. Create Security Group (Firewall)
+5. Provision EC2 Instance
+6. Deploy Docker container
