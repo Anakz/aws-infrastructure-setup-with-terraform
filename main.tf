@@ -133,6 +133,9 @@ resource "aws_instance" "myapp-server" {
   # key_name = "docker-server" // Associate a key pair that is aleady created from the browser with the EC2 to ssh into the instance
   key_name = aws_key_pair.ssh-key.key_name
 
+  # this bloc will only executed once, in initial run
+  user_data = file("entry-script.sh")
+
   tags = {
     Name: "${var.env_prefix}-server"
   }
